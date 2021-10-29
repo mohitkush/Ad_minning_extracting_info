@@ -81,6 +81,7 @@ def text_extraction(org_img,thresh_img,contours,call_of_action,brands):
     all_text = []
     for cnt in contours:
         x, y, w, h = cv2.boundingRect(cnt)
+        cv2.rectangle(org_img, (x,y), (x+w,y+h), (255, 0, 0), 2)
         cropped = thresh_img[y:y + h, x:x + w]
         cropped = 255-cropped
         
@@ -130,7 +131,7 @@ def text_extraction(org_img,thresh_img,contours,call_of_action,brands):
 
 
 text_extraction(cropped_im1,im12,contours1, call_of_action,brands)
-
+plt.imshow(cropped_im1)
 
 # In[ ]:
 
