@@ -10,13 +10,41 @@ Machine Learning Engineer  Internship Task
 6. Otherwise if you want to run the .py files type ```python3 ad_scrape.py``` and ```python3 model.py``` for the respective files.
 7. Details regarding the input output for both the files are discussed below
 
+
 ## ad_scrape.py/ad_scrape.ipynb
 python program to scrape ads from two webpages, https://www.speedtest.net/ and https://www.forbes.com. This file takes no input, I have hard-codded the two webpages, it returns the scrapped ads in the ```./Scraped_ads/{webpage}.jpg``` format
 
-## model.py/model.ipynb
-python program to extract text, logo and the call of action button. see some example below:
-For Samsung ad:
-
-
 ## Scraped_ads
-This directory contains the scraped ads from the above mentioned websites. You can run the model.py on these ads to check if the model is working fine.
+This directory where all the scraped ads from the above mentioned websites. You can run the model.py on these ads.
+
+## examples
+Example ads to test the model
+
+
+## model.py/model.ipynb
+python program to extract text, logo and the call of action button. The function takes in the path the input image and return the logo, call of action button and the texts associated with them. see some example below:
+
+### For Samsung ad:
+
+#### Ad on Webpage
+![ad on webpage](https://github.com/mohitkush/AdEase_task/blob/master/temp/samsung_ad.png)
+
+#### Orginal ad and the contours detected
+![Orginal and contours detected](https://github.com/mohitkush/AdEase_task/blob/master/temp/samsung_contours.png)
+
+#### Extracted Information
+![Extracted_information](https://github.com/mohitkush/AdEase_task/blob/master/temp/samsung_extract.png)
+
+### For Curiosity stream ad:
+
+#### Ad on Webpage
+![ad on webpage](https://github.com/mohitkush/AdEase_task/blob/master/temp/curiosity_ad.png)
+
+#### Orginal ad and the contours detected
+![Orginal and contours detected](https://github.com/mohitkush/AdEase_task/blob/master/temp/curiosity_contours.png)
+
+
+#### Extracted Information
+![Extracted_information](https://github.com/mohitkush/AdEase_task/blob/master/temp/curiosity_extract.png)
+
+
