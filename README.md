@@ -1,5 +1,4 @@
-# AdEase_task
-Machine Learning Engineer  Internship Task 
+# Machine Learning Engineer  Internship Task 
 
 ## Step by Step process to run the programs:
 1. Clone the repository ``` git clone https://github.com/mohitkush/AdEase_task.git ```
